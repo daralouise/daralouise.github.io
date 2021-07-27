@@ -1,0 +1,147 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAC.PH</title>
+    <link rel="stylesheet" href="book.css">
+</head> 
+
+<body>
+        <div class="header">
+        <div>
+            <div class="sitelogo">
+                <div> <img src="logo.PNG" alt= "The.Archie.Cafe logo" width="50" height="55"></div>
+                <div><strong>The.Archive.Cafe</strong></div>
+            </div>
+                </div>
+                <div>
+                    <img src="cart.jpg" atl= "Cart" width= "30" height="30" onclick="showCart();">
+                </div>
+            </div>
+            <p style="border-top: 2px solid black;">&nbsp;</p>
+        </div>
+
+        <div class="topnav">
+            <a class="active" href="#home">Home</a>
+            <a href="#newrelease">New Release</a>
+            <a href="#genres">Genres</a>
+            <a href="#Toppicks">Top Picks</a>
+            <a href="#Ebooks">Ebooks</a>
+            <a href="Aboutus">About Us</a>
+            
+          </div>
+            <br>
+            <br>
+            <br>
+          <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="pc2.png" style="width:100%">
+              <div class="text">Top picks for this month!</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="pc1.png" style="width:100%">
+              <div class="text">Stay caffeinated</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="pc3.png" style="width:100%">
+              <div class="text">Shuffle your genres</div>
+            </div>
+          
+        
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          
+    
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+        
+          <div class="centered">
+ 
+            <section class="cards">
+ 
+    <article class="card">
+        <img src="cp.png" alt="Crimes and Punishment by Fyodor" style="width:100%">
+        <h1>Crimes and Punishment</h1>
+            <p class="price">Php 800</p>
+            <p class="genre"> Genre: Philosophical novel; Psychological fiction</p>
+            <p class="author">By: Fyodor Dostoyevsky</p>
+            <p>Crime and Punishment focuses on the mental anguish and moral dilemmas of Rodion Raskolnikov, an impoverished ex-student in Saint Petersburg who formulates a plan to kill an unscrupulous pawnbroker for her money.</p>
+            <button onclick="addToCart(0)">Add to Cart</button>
+            </article>
+ 
+<article class="card">
+        <img src="sh.png" alt="Adventures of Sherlock Holmes by Sir Arthur Conan Doyle" style="width:100%">
+         <h1>Adventures of Sherlock Holmes</h1>
+        <p class="price">Php 550</p>
+        <p class="genre"> Genres: Short story, Mystery, Novel, Detective novel, Noir fiction, Crime Fiction</p>
+        <p class="author">By: Sir Arthur Conan Doyle</p>
+         <p>The Adventures of Sherlock Holmes is a collection of twelve short stories by Arthur Conan Doyle, first published on 14 October 1892.</p>
+         <button onclick="addToCart(1)">Add to Cart</button>
+            </article>
+ 
+<article class="card">
+    <img src="er.png" alt="Enough Rope by Dorothy Parker" style="width:100%">
+    <h1>Enough Rope</h1>
+    <p class="price">Php 930</p>
+    <p class="genre"> Genres: Poetry</p>
+    <p class="author">By: Dorothy Parker</p>
+    <p>Enough Rope in this idea is analogous to freedom, the great American obsession.</p>
+    <button onclick="addToCart(2)">Add to Cart</button>
+            </article>
+    </section>
+    
+<div id="myModal" class="modal">
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2>We're almost thereee...</h2>
+      </div>
+      <div class="modal-body">
+        <p>This item has been added to your cart!</p>
+      </div>
+      <div class="modal-footer">
+        <h5>Checkout time</h5>
+      </div>
+    </div>
+  
+  </div>
+
+</div>
+
+
+        <div id="myModal2" class="modal">
+
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>My Cart</h2>
+              </div>
+              <div class="modal-body">
+                <p>Items</p>
+                <div class= "items"></div>
+              </div>
+              <div class="modal-footer">
+                <h3>Continue Shopping</h3>
+              </div>
+            </div>
+          
+          </div>
+        
+        </div>
+       
+        <script src="scripts.js"></script>
+</body>
+</html>
