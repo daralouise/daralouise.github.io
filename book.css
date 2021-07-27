@@ -227,7 +227,15 @@ body {
     from {opacity: 0} 
     to {opacity: 1}
   }
-
+  @media  only screen and (max-width: 767px) {
+    .cards {
+      flex-wrap: wrap
+    }
+    .card {
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
   * {
     box-sizing: border-box;
   }
